@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.0.0](https://github.com/pm7y/AzureEventGridSimulator/compare/5.1.0...6.0.0) (2026-06-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* subscriptions with more than 25 filter values across all advanced filters now fail startup validation, and missing-key events no longer match StringNotContains/StringNotBeginsWith/StringNotEndsWith filters.
+
+### Bug Fixes
+
+* deep-dive review fixes for filtering semantics, schema fidelity, reliability and build isolation ([#287](https://github.com/pm7y/AzureEventGridSimulator/issues/287)) ([0be4a46](https://github.com/pm7y/AzureEventGridSimulator/commit/0be4a4678b2e79460b29a98eb2adec833ea439ce))
+
 ## [5.1.0](https://github.com/pm7y/AzureEventGridSimulator/compare/5.0.0...5.1.0) (2026-06-05)
 
 
